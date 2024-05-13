@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="script.js"></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -17,7 +18,7 @@
         
         <div class="search">
            <form action="#">
-            <input type="search" placeholder="Find whatever you want" keyup="search()" id="searchBar">
+            <input type="search" id="searchBar" placeholder="Find whatever you want" onkeyup="search()">
             <button><i class="fa fa-search"></i></button>
            </form>
         </div>
@@ -74,7 +75,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Avengers ENDGAME</div>
+                    <div class="title"><h3>Avengers ENDGAME</h3></div>
                     <div class="rate">5
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -93,7 +94,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">SpiderMan NO WAY HOME</div>
+                    <div class="title"><h3>SpiderMan NO WAY HOME</h3></div>
                     <div class="rate">4
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -111,7 +112,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Dr. Strange</div>
+                    <div class="title"><h3>Dr. Strange</h3></div>
                     <div class="rate">3
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -129,7 +130,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">3 Idiot</div>
+                    <div class="title"><h3>3 Idiot</h3></div>
                     <div class="rate">5
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -148,7 +149,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Rafta Rafta</div>
+                    <div class="title"><h3>Rafta Rafta</h3></div>
                     <div class="rate">5
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -167,7 +168,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Highway Love</div>
+                    <div class="title"><h3>Highway Love</h3></div>
                     <div class="rate">4
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -185,7 +186,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Money Heist</div>
+                    <div class="title"><h3>Money Heist</h3></div>
                     <div class="rate">5
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -204,7 +205,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">SpiderMan Animated</div>
+                    <div class="title"><h3>SpiderMan Animated</h3></div>
                     <div class="rate">4
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -222,7 +223,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Rana Naydu</div>
+                    <div class="title"><h3>Rana Naydu</h3></div>
                     <div class="rate">4
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -240,7 +241,7 @@
                 </div>
 
                 <div class="caption">
-                    <div class="title">Lucifer</div>
+                    <div class="title"><h3>Lucifer</h3></div>
                     <div class="rate">5
                         <div class="star">
                             <i class="fa fa-star checked" style="color: #ffd43b;"></i>
@@ -269,26 +270,6 @@
         </footer>
     </section>
 </main>
-<script>
-
-function search(){
-    let filter = document.getElementById('searchBar').value.toUpperCase();
-
-    let item = document.querySelectorAll('.card');
-    
-    let l = document.getElementsByTagName('h3');
-
-    for(var i =0; i<=l.length; i++){
-        let a = item[i].getElementsByTagName('h3')[0];
-
-        let value = a.innerHTML || a.innerText || a.textContent;
-        if(value.toUpperCase().indexOf(filter) >-1){
-            item[i].style.display = "";
-        }else{
-            item[i].style.display = "none";
-        }
-    }
-}</script>
 
 </body>
 </html>
