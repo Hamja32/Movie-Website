@@ -13,9 +13,7 @@
 html{
     font-size: 16px;
 }
-main{
-height:100vh;
-}
+
 body{
     background-image: linear-gradient(to bottom right, #1d6fa0, #741f80);   
     font-family: Poppins;
