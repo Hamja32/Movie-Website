@@ -348,3 +348,6 @@ main.main_body .side_bar .side_bar_btns li:hover{
     background-color: #000000; 
     color: white;
 }
+main{
+height:600px;
+}
